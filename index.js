@@ -13,7 +13,7 @@ const getTrackerId = () => {
 }
 
 class GoogleAnalytics {
-    static getCampaignData(screenName) {
+    static getCampaignData() {
         return GoogleAnalyticsBridge.getCampaignData();
     }
     
