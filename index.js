@@ -13,6 +13,10 @@ const getTrackerId = () => {
 }
 
 class GoogleAnalytics {
+    static getCampaignData(screenName) {
+        return GoogleAnalyticsBridge.getCampaignData();
+    }
+    
     /**
      * Track the current screen/view
      * @param  {String} screenName The name of the current screen
