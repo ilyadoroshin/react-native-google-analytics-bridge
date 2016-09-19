@@ -53,6 +53,11 @@ public class GoogleAnalyticsBridge extends ReactContextBaseJavaModule {
         constants.put("nativeTrackerId", _trackingId);
         return constants;
     }
+    
+    @ReactMethod
+    public String getCampaignData(){
+        return "CampaignData";
+    }
 
     @ReactMethod
     public void trackScreenView(String trackerId, String screenName){
